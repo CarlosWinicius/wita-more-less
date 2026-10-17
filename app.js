@@ -20,3 +20,4 @@ document.querySelector("#start").onclick=()=>dialog.close();
 document.addEventListener("keydown",e=>{if(e.key==="ArrowUp"||e.key==="ArrowDown")e.preventDefault();if(e.key==="ArrowUp")guess("more");if(e.key==="ArrowDown")guess("less")});
 reset();
 setTimeout(()=>dialog.showModal(),450);
+const supportLink=document.createElement("a");supportLink.className="support-link";supportLink.href="https://link.mercadopago.com.br/wita";supportLink.target="_blank";supportLink.rel="noopener noreferrer";supportLink.textContent="APOIAR";document.querySelector("header").append(supportLink);
